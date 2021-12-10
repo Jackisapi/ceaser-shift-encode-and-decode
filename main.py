@@ -63,7 +63,7 @@ def makekey(text_str, keytype):
 publickey=""
 privatekey =""
 while(1):
-    task = input("D)ecode or E)ncode or R)ead keys or M)ake keys")
+    task = input("D)ecode or E)ncode or R)ead keys or M)ake keys L)eave")
 
     if task.upper() == "D":
         code=input("Enter your message")
@@ -81,6 +81,8 @@ while(1):
         privatekey = makekey(alpha,"private")
         write("publickey.txt", publickey)
         write("privatekey.txt", privatekey)
+    elif task.upper()=="L":
+        exit()
 
     else:
         code = input("Enter your message ")
