@@ -3,7 +3,7 @@
 #10/6/2021
 
 
-import random
+import random, hashlib
 
 alpha = "abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()"
 
@@ -88,3 +88,4 @@ while(1):
         code = input("Enter your message ")
         enc = encode(code,publickey, privatekey)
         print(enc)
+
